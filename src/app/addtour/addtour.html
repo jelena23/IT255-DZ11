@@ -1,0 +1,19 @@
+<form role="form" [formGroup]="addtourForm">
+    <div class="form-group">
+        <label for="country">Country:</label>
+        <input type="text" class="form-control" formControlName='country'>
+    </div>
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" formControlName='name'>
+    </div>
+    <div class="form-group">
+        <label for="location">Location:</label>
+        <input type="text" class="form-control" formControlName='location'>
+    </div>
+    <div class="form-group">
+        <label for="num_of_days">Number of Days:</label>
+        <input type="number" class="form-control" formControlName='num_of_days'>
+    </div>
+    <button (click)="addTour()" class="btn btn-default">Add Tour</button>
+</form>
