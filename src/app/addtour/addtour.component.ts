@@ -15,10 +15,10 @@ export class AddTourComponent {
   router: Router;
 
   addtourForm = new FormGroup({
-    ime: new FormControl(),
-    prezime: new FormControl(),
-    indeks: new FormControl(),
-    smer: new FormControl()
+    country: new FormControl(),
+    name: new FormControl(),
+    location: new FormControl(),
+    num_of_days: new FormControl()
   });
 
 
