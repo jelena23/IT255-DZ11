@@ -1,10 +1,10 @@
-import { Ng2CliDemoPage } from './app.po';
+import { IT255DZ13Page } from './app.po';
 
-describe('ng2-cli-demo App', () => {
-  let page: Ng2CliDemoPage;
+describe('it255-dz13 App', () => {
+  let page: IT255DZ13Page;
 
   beforeEach(() => {
-    page = new Ng2CliDemoPage();
+    page = new IT255DZ13Page();
   });
 
   it('should display message saying app works', () => {

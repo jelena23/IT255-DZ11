@@ -5,19 +5,21 @@ import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { MainPageComponent } from './mainpage/mainpage.component';
-import { AboutUsComponent } from './aboutus/aboutus.component';
+import { ViewToursComponent } from './viewtours/viewtours.component';
 import { AddTourComponent } from './addtour/addtour.component';
+import { TourComponent } from './tour/tour.component';
 
 const appRoutes: Routes = [
   { path: '', component: MainPageComponent },
-  { path: 'aboutus', component: AboutUsComponent },
-  { path: 'dodajstudenta', component: AddTourComponent },
+  { path: 'viewtours', component: ViewToursComponent },
+  { path: 'addtour', component: AddTourComponent },
+  { path: 'tour/:id', component: TourComponent}
 
 ];
 
 @NgModule({
   declarations: [
-    AppComponent, AboutUsComponent, MainPageComponent, AddTourComponent
+    AppComponent, ViewToursComponent, MainPageComponent, AddTourComponent, TourComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

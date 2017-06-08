@@ -1,0 +1,30 @@
+<div class="col-lg-12">
+    <br/>Tours<br/> <br/>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Tour name</th>
+                <th>Country</th>
+                <th>Location</th>
+                <th>Number of days</th>
+                <th>Delete</th>
+                <th>View</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let room of data">
+                <td>{{tour.name}}</td>
+                <td>{{tour.country}}</td>
+                <td>{{tour.location}}</td>
+                <td>{{tour.num_of_days}}</td>
+                <td>
+                    <button class="btn btn-danger" (click)="removeTour($event,
+tour.id)">Delete</button>
+                </td>
+                <td>
+                    <button class="btn btn-default" (click)="viewTour(tour.id)">View</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

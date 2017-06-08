@@ -1,5 +1,5 @@
 {
-  "name": "ng2-cli-demo",
+  "name": "it255-dz13",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -25,7 +25,7 @@
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
-    "@angular/cli": "1.0.3",
+    "@angular/cli": "1.0.4",
     "@angular/compiler-cli": "^4.0.0",
     "@types/jasmine": "2.5.38",
     "@types/node": "~6.0.60",
