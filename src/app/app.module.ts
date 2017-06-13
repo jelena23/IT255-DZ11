@@ -8,18 +8,20 @@ import { MainPageComponent } from './mainpage/mainpage.component';
 import { ViewToursComponent } from './viewtours/viewtours.component';
 import { AddTourComponent } from './addtour/addtour.component';
 import { TourComponent } from './tour/tour.component';
+import { UpdateTourComponent } from './updatetour/updatetour.component';
 
 const appRoutes: Routes = [
   { path: '', component: MainPageComponent },
   { path: 'viewtours', component: ViewToursComponent },
   { path: 'addtour', component: AddTourComponent },
-  { path: 'tour/:id', component: TourComponent}
+  { path: 'tour/:id', component: TourComponent},
+  { path: 'updatetour', component: UpdateTourComponent }
 
 ];
 
 @NgModule({
   declarations: [
-    AppComponent, ViewToursComponent, MainPageComponent, AddTourComponent, TourComponent
+    AppComponent, ViewToursComponent, MainPageComponent, AddTourComponent, TourComponent, UpdateTourComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

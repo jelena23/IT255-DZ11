@@ -211,4 +211,19 @@ $rarray['data'] = $tours;
 return json_encode($rarray);
 
 }
+
+function updateTour($country, $name, $location, $num_of_days, $id){
+    global $conn;
+    $rarray = array();
+        $stmt = $conn->prepare("UPDATE tour SET country=?, name=?, location=?, num_of_days=? WHERE
+id=?");
+        $stmt->bind_param("sssi", $country, $name, $location, $num_of_days, $id);
+        if($stmt->execute()){
+            $rarray['success'] = "updated";
+        }else{
+            $rarray['error'] = "Database connection error";
+        }
+    
+    return json_encode($rarray);
+}
 ?>
