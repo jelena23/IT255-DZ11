@@ -18,7 +18,8 @@ export class UpdateTourComponent {
     country: new FormControl(),
     name: new FormControl(),
     location: new FormControl(),
-    num_of_days: new FormControl()
+    num_of_days: new FormControl(),
+    id: new FormControl()
   });
 
 
